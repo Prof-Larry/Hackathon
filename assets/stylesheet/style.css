@@ -15,7 +15,7 @@ body{
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
-    padding: 1rem;
+    /* padding: 1rem; */
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -666,6 +666,8 @@ img {
 /* --------------------------------------------------------------------------------------RESPONSIVE CODE---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 426px){
+    
+    
     .nav-left, .nav-right{
         display: none !important;
     }
@@ -687,6 +689,160 @@ img {
     .h-content-left li{
         letter-spacing: 1px;
         /* margin-left: ; */
+    }
+
+}
+
+
+@media only screen and (max-width: 915px){
+    .navbar a{
+        display: none;
+    }
+
+    
+
+    .h-content-left{
+        width: 60%;
+        margin: 11rem 0 0 8rem;
+    }
+
+    .h-content-left p::before{
+        font-size: 40px;
+    }
+
+    .h-content-left p{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sell::before{
+        margin:100px 0 80px 0;
+    }
+
+    .sell{
+        height: 200vh;
+        justify-content: center
+    }
+
+    .sellers{
+        margin-top: 100px;
+        flex-direction: column;
+        height: 80%;
+        justify-content: center;
+    }
+
+    .sell-buyers{
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    .sell-companies{
+        width: 80%;
+    }
+
+    .info::before{
+        margin: 100px 0;
+    }
+
+    .info{
+        height: 250vh;
+        justify-content: flex-start;
+    }
+
+    .info .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info .card{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .info .card-img{
+        width: 70%;
+        height: 30vh;
+        
+    }
+
+    .products{
+        height: 120vh;
+    }
+
+    .products .product{
+        height: 80vh;
+    }
+
+    .products .product .product-card{
+        width: 25%;
+        margin: 10px 25px;
+    }
+    
+    .products .product .pro-top{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        height: 150vh;
+        flex-direction: column;
+    }
+
+    .foot-left{
+        width: 80%;
+        height: 50vh;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+
+    .foot-main{
+        width: 90%;
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .foot-right{
+        width: 80%;
+        height: 50vh;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .h-content-left p::before{
+        font-size: 25px;
+    }
+
+    .h-content-left p{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    .h-content-left{
+        margin: 12rem 0 0 2rem;
+    }
+
+    .h-content-left li{
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    .sell{
+        height: 150vh;
+    }
+
+    .sell-buyers{
+        
+        height: 400px;
+    }
+
+    .carousel-inner .sizeit{
+        height: 30vh;
     }
 
 }
