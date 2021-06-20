@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-*, *::before, *::after{
+*, ::before, ::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,19 +10,7 @@
 
 body{
     background-color: whitesmoke;
-    color: black;
-    font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    padding: 1rem;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    /* -moz-font-feature-settings: "liga" on; */
-} 
-
+}
 
 hr{
     width: 70%;
@@ -67,7 +55,7 @@ hr{
 }
 
 .navbar a:hover{
-    background-color: rgb(30, 122, 18);
+    background-color: rgb(93, 145, 86);
     color: white;
     border-radius: 2px;
 }
@@ -205,131 +193,6 @@ hr{
 }
 
 /* ---------------------------------------------INFO CONTENT-------------------------------------- */
-
-/* ---------------------------------------------SCHEME CONTENT START--------------------------------------  */
-
-
-.Schemes::before{
-    content: 'Useful Schemes';
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
-}
-
-.Schemes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(180, 190, 151, 0.3);
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.btn {
-    -webkit-box-shadow: 0px 1px 7px #45a818;
-    -moz-box-shadow: 0px 1px 7px #45a818;
-    box-shadow: 0px 1px 7px #45a818;
-    font-family: Georgia;
-    color: #030303;
-    font-size: 17px;
-    border-radius: px;
-    background: #ffffff;
-    padding: 5px 5px 5px 5px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #ffffff;
-    background-image: -webkit-linear-gradient(top, #ffffff, #50ff05);
-    background-image: -moz-linear-gradient(top, #ffffff, #50ff05);
-    background-image: -ms-linear-gradient(top, #ffffff, #50ff05);
-    background-image: -o-linear-gradient(top, #ffffff, #50ff05);
-    background-image: linear-gradient(to bottom, #ffffff, #50ff05);
-    text-decoration: none;
-  }
-/* .btn {
-  background-color: white;
-  border: 1px solid yellowgreen;
-  border-radius: 1rem;
-  color: black;
-  padding: 0.5rem;
-  text-transform: lowercase;
-  margin: 0 auto
-  
-} */
-
-.btn--block {
-  display: inline-block;
-  width: 10rem;
-}
- 
-.cards1 {
-  display: flex;
-  flex-wrap: nowrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
- .cards1__item {
-  display: flex;
-  flex-basis: 100%;
-  padding: 1rem;
-   @media(min-width: 40rem) {
-    width: 50%;
-  }
-  @media(min-width: 56rem) {
-    width: 33.3333%;
-  } 
- }
-
-.card1 {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  padding: 4px;
-  
-}
-
-.card1__content {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-
-.card1__title {
-    padding:30px;
-    color: black;
-    font-size: 1.25rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.card1__text {
-    padding:10px;
-    flex: 1 1 auto;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
-}
-
-
-
-
-/* ---------------------------------------------SCHEME CONTENT END--------------------------------------  */
 
 
 /* ---------------------------------------------PRODUCT CONTENT----------------------------------- */
@@ -529,6 +392,8 @@ img {
     border-radius: 8px;
 }
 
+/* ----------------------------------------------------------SELL CONTENT------------------------------------- */
+
 
 /* ----------------------------------------------------------FOOTER CONTENT---------------------------------- */
 
@@ -541,13 +406,33 @@ img {
     align-items: center;
 }
 
-.foot-left, foot-right{
+.foot-right{
     width: 30%;
     height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.foot-left{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-left .f-1{
+    width: 42%;
+}
+
+.foot-left .f-1 li{
+    list-style-type: none;
 }
 
 .foot-main{
-    width: 40%;
+    width: 30%;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -558,4 +443,77 @@ img {
     width: 50%;
     height: auto;
     margin: 20px 0;
+}
+
+.foot-left .f-1 svg{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.foot-left .f-2{
+    width: 42%;
+    height: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foot-left .f-2 .f-img{
+    width: 45%;
+    height: auto;
+}
+
+.foot-left .f-2 img{
+    width: 100%;
+}
+
+.foot-right .f-3{
+    width: 42%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-right .f-3 a{
+    text-decoration: none;
+}
+
+.foot-right .f-4{
+    width: 55%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-right .f-4 form{
+    display: flex;
+}
+
+.foot-right .f-4 input{
+    padding: 10px 5px 5px 5px;
+    border: none;
+    width: 75%;
+}
+
+.foot-right .f-4 button{
+    border: none;
+    width: 30%;
+    font-size: 15px;
+    background-color: rgb(228, 42, 73);
+    color: white;
+    padding-top: 5px;
+}
+
+.foot-right .f-4 button:hover{
+    background-color: rgba(228, 42, 73, 0.8);;
+
+}
+
+.social-media{
+    padding: 20px 20px 20px 0;
+}
+
+.social-media svg{
+    width: 25px;
 }
