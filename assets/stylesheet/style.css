@@ -406,13 +406,33 @@ hr{
     align-items: center;
 }
 
-.foot-left, foot-right{
+.foot-right{
     width: 30%;
     height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.foot-left{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-left .f-1{
+    width: 42%;
+}
+
+.foot-left .f-1 li{
+    list-style-type: none;
 }
 
 .foot-main{
-    width: 40%;
+    width: 30%;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -423,4 +443,77 @@ hr{
     width: 50%;
     height: auto;
     margin: 20px 0;
+}
+
+.foot-left .f-1 svg{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.foot-left .f-2{
+    width: 42%;
+    height: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foot-left .f-2 .f-img{
+    width: 45%;
+    height: auto;
+}
+
+.foot-left .f-2 img{
+    width: 100%;
+}
+
+.foot-right .f-3{
+    width: 42%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-right .f-3 a{
+    text-decoration: none;
+}
+
+.foot-right .f-4{
+    width: 55%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-right .f-4 form{
+    display: flex;
+}
+
+.foot-right .f-4 input{
+    padding: 10px 5px 5px 5px;
+    border: none;
+    width: 75%;
+}
+
+.foot-right .f-4 button{
+    border: none;
+    width: 30%;
+    font-size: 15px;
+    background-color: rgb(228, 42, 73);
+    color: white;
+    padding-top: 5px;
+}
+
+.foot-right .f-4 button:hover{
+    background-color: rgba(228, 42, 73, 0.8);;
+
+}
+
+.social-media{
+    padding: 20px 20px 20px 0;
+}
+
+.social-media svg{
+    width: 25px;
 }
